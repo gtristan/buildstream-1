@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>3. Overlapping files &mdash; BuildStream 1.93.5+337.gcd2f7433 documentation</title>
+  <title>3. Overlapping files &mdash; BuildStream 1.93.5+345.gc02e5c19 documentation</title>
   
 
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -50,7 +53,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> BuildStream
+            <a href="../index.html" class="icon icon-home"> BuildStream
           
 
           
@@ -60,7 +63,7 @@
             
             
               <div class="version">
-                1.93.5+337.gcd2f7433
+                1.93.5+345.gc02e5c19
               </div>
             
           
@@ -155,6 +158,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -170,7 +175,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/handling-files/overlaps.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -192,7 +197,7 @@ use to resolve these situations.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This example is distributed with BuildStream
-in the <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/tree/master/doc/examples/overlaps">doc/examples/overlaps</a>
+in the <a class="reference external" href="https://github.com/apache/buildstream/tree/master/doc/examples/overlaps">doc/examples/overlaps</a>
 subdirectory.</p>
 </div>
 <div class="section" id="overview">
@@ -275,8 +280,8 @@ discuss how to mitigate this situation.</p>
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span>        <span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">    main</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">core activity                 </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#3465A4"><span style=""><span style="opacity:0.5">START  </span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Preparing work plan
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span>        <span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">    main</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">core activity                 </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Preparing work plan
 
-<span style="color:#C4A000"><span style="">BuildStream Version 1.93.5+337.gcd2f7433
-</span></span>    <span style="color:#06989A"><span style="opacity:0.5">Session Start</span></span><span style="color:#06989A"><span style="opacity:0.5">:</span></span> <span style="color:#C4A000">Monday, 04-01-2021 at 13:36:53</span>
+<span style="color:#C4A000"><span style="">BuildStream Version 1.93.5+345.gc02e5c19
+</span></span>    <span style="color:#06989A"><span style="opacity:0.5">Session Start</span></span><span style="color:#06989A"><span style="opacity:0.5">:</span></span> <span style="color:#C4A000">Tuesday, 05-01-2021 at 09:27:59</span>
     <span style="color:#06989A"><span style="opacity:0.5">Project</span></span><span style="color:#06989A"><span style="opacity:0.5">:</span></span>       <span style="color:#C4A000">overlaps (/home/user/overlaps)</span>
     <span style="color:#06989A"><span style="opacity:0.5">Targets</span></span><span style="color:#06989A"><span style="opacity:0.5">:</span></span>       <span style="color:#C4A000">runtime-only.bst</span>
 
@@ -311,7 +316,7 @@ discuss how to mitigate this situation.</p>
 <span style="color:#75507B">      cached</span> <span style="color:#C4A000">0ae01bdfcad3f36fb9caa1efb17bf182e9f7b7d6b39c2c82d2dc521fc75bb113</span> <span style="color:#3465A4"><span style="">hello.bst</span></span> 
 <span style="color:#4E9A06">   buildable</span> <span style="color:#C4A000">47102cb00707ce42c57e7f3157d489631e457abcb9aa5adb114b18dbde29f3b7</span> <span style="color:#3465A4"><span style="">runtime-only.bst</span></span> 
 <span style="color:#06989A"><span style="opacity:0.5">===============================================================================
-</span></span><span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#3465A4"><span style=""><span style="opacity:0.5">START  </span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span><span style="color:#C4A000"><span style="opacity:0.5">overlaps/runtime-only/47102cb0-build.6808.log</span></span>
+</span></span><span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#3465A4"><span style=""><span style="opacity:0.5">START  </span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span><span style="color:#C4A000"><span style="opacity:0.5">overlaps/runtime-only/47102cb0-build.6652.log</span></span>
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#3465A4"><span style=""><span style="opacity:0.5">START  </span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Staging dependencies
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#C4A000"><span style=""><span style="opacity:0.5">WARNING</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>[overlaps]: Non-whitelisted overlaps detected
 
@@ -338,8 +343,8 @@ discuss how to mitigate this situation.</p>
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Creating composition
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">--</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#3465A4"><span style=""><span style="opacity:0.5">START  </span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Caching artifact
 <span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Caching artifact
-<span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">04</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span><span style="color:#C4A000"><span style="opacity:0.5">overlaps/runtime-only/47102cb0-build.6808.log</span></span>
-<span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">04</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span>        <span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">    main</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">core activity                 </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Build
+<span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">03</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">47102cb0</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">   build</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">runtime-only.bst              </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span><span style="color:#C4A000"><span style="opacity:0.5">overlaps/runtime-only/47102cb0-build.6652.log</span></span>
+<span style="color:#06989A"><span style="opacity:0.5">[</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">00</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">03</span><span style="color:#06989A"><span style="opacity:0.5">][</span></span>        <span style="color:#06989A"><span style="opacity:0.5">][</span></span><span style="color:#C4A000">    main</span><span style="color:#06989A"><span style="opacity:0.5">:</span></span><span style="color:#C4A000">core activity                 </span><span style="color:#06989A"><span style="opacity:0.5">] </span></span><span style="color:#4E9A06"><span style=""><span style="opacity:0.5">SUCCESS</span></span></span><span style="color:#06989A"><span style="opacity:0.5"> </span></span>Build
 
 <span style="color:#C4A000"><span style="">Pipeline Summary
 </span></span>    <span style="color:#06989A"><span style="opacity:0.5">Total</span></span><span style="color:#06989A"><span style="opacity:0.5">:</span></span>       <span style="color:#C4A000">5</span>
@@ -427,37 +432,29 @@ to deal with cases where you want to keep files from the
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../using_junctions.html" class="btn btn-neutral float-right" title="Combining projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="filtering.html" class="btn btn-neutral float-left" title="2. Filtering" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="../using_junctions.html" class="btn btn-neutral float-right" title="Combining projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="filtering.html" class="btn btn-neutral float-left" title="2. Filtering" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2017-2020, The BuildStream Contributors
+        &#169; Copyright 2017-2020, The BuildStream Contributors.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

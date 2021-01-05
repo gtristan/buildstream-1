@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Contributing &mdash; BuildStream 1.93.5+337.gcd2f7433 documentation</title>
+  <title>Contributing &mdash; BuildStream 1.93.5+345.gc02e5c19 documentation</title>
   
 
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -50,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> BuildStream
+            <a href="index.html" class="icon icon-home"> BuildStream
           
 
           
@@ -60,7 +63,7 @@
             
             
               <div class="version">
-                1.93.5+337.gcd2f7433
+                1.93.5+345.gc02e5c19
               </div>
             
           
@@ -95,9 +98,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#fixing-bugs">Fixing bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-new-features">Adding new features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#submitting-patches">Submitting patches</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ask-for-developer-access">Ask for developer access</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#branch-names">Branch names</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#merge-requests">Merge requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-requests">Pull requests</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#organized-commits">Organized commits</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#commit-messages">Commit messages</a></li>
 </ul>
@@ -164,6 +166,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -175,7 +179,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/CONTRIBUTING.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -195,8 +199,8 @@
 <div class="section" id="filing-issues">
 <span id="contributing-filing-issues"></span><h2>Filing issues<a class="headerlink" href="#filing-issues" title="Permalink to this headline">¶</a></h2>
 <p>If you are experiencing an issue with BuildStream, or would like to submit a patch
-to fix an issue, then you should first search the list of <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/issues">open issues</a>
-to see if the issue is already filed, and <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/issues/new">open an issue</a>
+to fix an issue, then you should first search the list of <a class="reference external" href="https://github.com/apache/buildstream/issues">open issues</a>
+to see if the issue is already filed, and <a class="reference external" href="https://github.com/apache/buildstream/issues/new">open an issue</a>
 if no issue already exists.</p>
 </div>
 <div class="section" id="fixing-bugs">
@@ -225,19 +229,14 @@ process, giving us a reasonable timeframe for identifying these.</p>
 </div>
 <div class="section" id="submitting-patches">
 <span id="contributing-submitting-patches"></span><h2>Submitting patches<a class="headerlink" href="#submitting-patches" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="ask-for-developer-access">
-<h3>Ask for developer access<a class="headerlink" href="#ask-for-developer-access" title="Permalink to this headline">¶</a></h3>
-<p>If you want to submit a patch, do ask for developer permissions, either
-by asking us directly on our public IRC channel (<a class="reference external" href="irc://irc.gnome.org/#buildstream">irc://irc.gnome.org/#buildstream</a>)
-or by visiting our <a class="reference external" href="https://gitlab.com/BuildStream/buildstream">project page on GitLab</a>
-and using the GitLab UI to ask for permission.</p>
-<p>This will make your contribution experience smoother, as you will not
-need to setup any complicated CI settings, and rebasing your branch
-against the upstream master branch will be more painless.</p>
-</div>
+<p>Submitting patches works in the regular GitHub workflow of submitting
+pull requests.</p>
 <div class="section" id="branch-names">
 <h3>Branch names<a class="headerlink" href="#branch-names" title="Permalink to this headline">¶</a></h3>
-<p>Branch names for merge requests should be prefixed with the submitter’s
+<p>If you are an apache member with access to the main repository, and are
+submitting a pull request for a branch within the main repository, then
+please be careful to use an identifiable branch name.</p>
+<p>Branch names for pull requests should be prefixed with the submitter’s
 name or nickname, followed by a forward slash, and then a descriptive
 name. e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">username</span><span class="o">/</span><span class="n">fix</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">bug</span>
@@ -247,29 +246,22 @@ name. e.g.:</p>
 belongs to whom, especially so that we can effectively cleanup stale
 branches in the upstream repository over time.</p>
 </div>
-<div class="section" id="merge-requests">
-<h3>Merge requests<a class="headerlink" href="#merge-requests" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pull-requests">
+<h3>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
 <p>Once you have created a local branch, you can push it to the upstream
 BuildStream repository using the command line:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">username</span><span class="o">/</span><span class="n">fix</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">bug</span><span class="p">:</span><span class="n">username</span><span class="o">/</span><span class="n">fix</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">bug</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">username</span><span class="o">/</span><span class="n">fix</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">bug</span>
 </pre></div>
 </div>
-<p>GitLab will respond to this with a message and a link to allow you to create
-a new merge request. You can also <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/merge_requests/new">create a merge request for an existing branch</a>.</p>
-<p>You may open merge requests for the branches you create before you are ready
+<p>GitHub will respond to this with a message and a link to allow you to create
+a new merge request. You can also <a class="reference external" href="https://github.com/apache/buildstream/compare">create a pull request using the GitHub UI</a>.</p>
+<p>You may open pull requests for the branches you create before you are ready
 to have them reviewed and considered for inclusion if you like. Until your merge
-request is ready for review, the merge request title must be prefixed with the
-<code class="docutils literal notranslate"><span class="pre">WIP:</span></code> identifier. GitLab <a class="reference external" href="https://docs.gitlab.com/ee/user/project/merge_requests/work_in_progress_merge_requests.html">treats this specially</a>,
-which helps reviewers.</p>
-<p>Consider marking a merge request as WIP again if you are taking a while to
+request is ready for review, the pull request title must be prefixed with the
+<code class="docutils literal notranslate"><span class="pre">WIP:</span></code> identifier.</p>
+<p>Consider marking a pull request as WIP again if you are taking a while to
 address a review point. This signals that the next action is on you, and it
 won’t appear in a reviewer’s search for non-WIP merge requests to review.</p>
-<p>As a general rule of thumb, after a month of no activity from the submitter of
-a non-WIP MR, we’ll put it back into WIP with a polite note. Then after another
-month with no activity we’ll close the MR off entirely with another note.
-In this way we are trying to ensure all of the MRs in our backlog are relevant
-and up to date. We have some <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/.gitlab/merge_request_templates/stale_MR_message.md">boilerplate text</a>,
-to help us when writing these notes.</p>
 </div>
 <div class="section" id="organized-commits">
 <h3>Organized commits<a class="headerlink" href="#organized-commits" title="Permalink to this headline">¶</a></h3>
@@ -290,8 +282,7 @@ be changed to match the new behavior, then the tests should be updated
 with the same commit, so that every commit passes its own tests.</p>
 <p>These principles apply whenever a branch is non-WIP. So for example, don’t push
 ‘fixup!’ commits when addressing review comments, instead amend the commits
-directly before pushing. GitLab has <a class="reference external" href="https://docs.gitlab.com/ee/user/project/merge_requests/versions.html">good support</a> for
-diffing between pushes, so ‘fixup!’ commits are not necessary for reviewers.</p>
+directly before pushing.</p>
 </div>
 <div class="section" id="commit-messages">
 <h3>Commit messages<a class="headerlink" href="#commit-messages" title="Permalink to this headline">¶</a></h3>
@@ -345,14 +336,10 @@ separately.</p>
 <div class="section" id="committer-access">
 <h2>Committer access<a class="headerlink" href="#committer-access" title="Permalink to this headline">¶</a></h2>
 <p>Committers in the BuildStream project are those folks to whom the right to
-directly commit changes to our version controlled resources has been granted.
-While every contribution is
-valued regardless of its source, not every person who contributes code to the
-project will earn commit access. The <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/COMMITTERS.rst">COMMITTERS</a> file lists all committers.</p>
-<p>Whenever someone is granted (or revoked) commit access, an Owner or Maintainer
-should run the the script located at <cite>contrib/update_committers.py</cite> with their
-personal access token, updating the COMMITTERS.rst list and opening an MR
-with their changes.</p>
+directly commit changes to our version controlled resources has been granted.</p>
+<p>While every contribution is valued regardless of its source, not every person
+who contributes code to the project will earn commit access.
+The <a class="reference external" href="https://github.com/apache/buildstream/blob/master/COMMITTERS.rst">COMMITTERS</a> file lists all committers.</p>
 <div class="section" id="how-commit-access-is-granted">
 <h3>How commit access is granted<a class="headerlink" href="#how-commit-access-is-granted" title="Permalink to this headline">¶</a></h3>
 <p>After someone has successfully contributed a few non-trivial patches, some full
@@ -416,37 +403,29 @@ can be used to generate a native-windows runner.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="hacking/coding_guidelines.html" class="btn btn-neutral float-right" title="Coding guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="buildstream.storage.directory.html" class="btn btn-neutral float-left" title="Directory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="hacking/coding_guidelines.html" class="btn btn-neutral float-right" title="Coding guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="buildstream.storage.directory.html" class="btn btn-neutral float-left" title="Directory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2017-2020, The BuildStream Contributors
+        &#169; Copyright 2017-2020, The BuildStream Contributors.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

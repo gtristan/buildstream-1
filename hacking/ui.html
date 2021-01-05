@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Contributing to the UI &mdash; BuildStream 1.93.5+337.gcd2f7433 documentation</title>
+  <title>Contributing to the UI &mdash; BuildStream 1.93.5+345.gc02e5c19 documentation</title>
   
 
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -50,7 +53,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> BuildStream
+            <a href="../index.html" class="icon icon-home"> BuildStream
           
 
           
@@ -60,7 +63,7 @@
             
             
               <div class="version">
-                1.93.5+337.gcd2f7433
+                1.93.5+345.gc02e5c19
               </div>
             
           
@@ -158,6 +161,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -171,7 +176,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/hacking/ui.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -188,7 +193,7 @@
   <div class="section" id="contributing-to-the-ui">
 <h1>Contributing to the UI<a class="headerlink" href="#contributing-to-the-ui" title="Permalink to this headline">¶</a></h1>
 <p>As we wish to cleanly separate BuildStream’s core from the frontend, anything
-user facing should be defined within the modules contained within the <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/tree/master/src/buildstream/_frontend">_frontend</a>
+user facing should be defined within the modules contained within the <a class="reference external" href="https://github.com/apache/buildstream/tree/master/src/buildstream/_frontend">_frontend</a>
 directory.</p>
 <p>BuildStream’s frontend includes:</p>
 <blockquote>
@@ -204,7 +209,7 @@ logging and user interactions.</p></li>
 </div></blockquote>
 <div class="section" id="the-command-line-interface">
 <h2>The command line interface<a class="headerlink" href="#the-command-line-interface" title="Permalink to this headline">¶</a></h2>
-<p>All of BuildStream’s commands are defined within the module <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/src/buildstream/_frontend/cli.py">cli.py</a> -,
+<p>All of BuildStream’s commands are defined within the module <a class="reference external" href="https://github.com/apache/buildstream/tree/master/src/buildstream/_frontend/cli.py">cli.py</a> -,
 the main entry point which implements the CLI.</p>
 <p>The command line interface is generated with <a class="reference external" href="https://palletsprojects.com/p/click/">Click</a> - a third party Python package. Click
 is easy to use and automatically generates help pages.</p>
@@ -240,8 +245,8 @@ implemented classes in widget.py. This module contains classes which represent
 widgets for displaying information to the user.</p>
 <p>To report messages back to the frontend, we use the <code class="docutils literal notranslate"><span class="pre">Message()</span></code> object
 which is available from the <code class="docutils literal notranslate"><span class="pre">Context</span></code>.</p>
-<p>Supported message types are defined in <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/src/buildstream/_message.py">_message.py</a>
-and various uses of the messenger are defined in <a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/src/buildstream/_messenger.py">_messenger.py</a></p>
+<p>Supported message types are defined in <a class="reference external" href="https://github.com/apache/buildstream/tree/master/src/buildstream/_message.py">_message.py</a>
+and various uses of the messenger are defined in <a class="reference external" href="https://github.com/apache/buildstream/tree/master/src/buildstream/_messenger.py">_messenger.py</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">Messenger</span></code> class defines various methods which allow us to report back to
 the frontend in particular ways. The common methods are:</p>
 <ul class="simple">
@@ -259,37 +264,29 @@ progress too.</p></li>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../main_architecture.html" class="btn btn-neutral float-right" title="Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="updating_python_deps.html" class="btn btn-neutral float-left" title="Updating BuildStream’s Python dependencies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="../main_architecture.html" class="btn btn-neutral float-right" title="Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="updating_python_deps.html" class="btn btn-neutral float-left" title="Updating BuildStream’s Python dependencies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2017-2020, The BuildStream Contributors
+        &#169; Copyright 2017-2020, The BuildStream Contributors.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

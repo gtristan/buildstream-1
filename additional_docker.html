@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>BuildStream and Docker &mdash; BuildStream 1.93.5+337.gcd2f7433 documentation</title>
+  <title>BuildStream and Docker &mdash; BuildStream 1.93.5+345.gc02e5c19 documentation</title>
   
 
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -50,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> BuildStream
+            <a href="index.html" class="icon icon-home"> BuildStream
           
 
           
@@ -60,7 +63,7 @@
             
             
               <div class="version">
-                1.93.5+337.gcd2f7433
+                1.93.5+345.gc02e5c19
               </div>
             
           
@@ -147,6 +150,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -162,7 +167,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/additional_docker.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -187,12 +192,11 @@ documentation for instructions on how to run BuildStream as a Docker container.<
 </div>
 <div class="section" id="generate-docker-images">
 <h2>Generate Docker images<a class="headerlink" href="#generate-docker-images" title="Permalink to this headline">¶</a></h2>
-<p>The
-<a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/contrib/bst-docker-import">bst-docker-import script</a>
+<p>The <a class="reference external" href="https://github.com/apache/buildstream/blob/master/contrib/bst-docker-import">bst-docker-import script</a>
 can be used to generate a Docker image from built artifacts.</p>
 <p>You can download it and make it executable like this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir -p ~/.local/bin
-curl --get https://gitlab.com/BuildStream/buildstream/raw/master/contrib/bst-docker-import &gt; ~/.local/bin/bst-docker-import
+curl --get https://raw.githubusercontent.com/apache/buildstream/master/contrib/bst-docker-import &gt; ~/.local/bin/bst-docker-import
 chmod +x ~/.local/bin/bst-docker-import
 </pre></div>
 </div>
@@ -209,7 +213,7 @@ called <code class="docutils literal notranslate"><span class="pre">hello.bst</s
 <p>This script can also be used if you are running BuildStream inside Docker. In
 this case, you will need to supply the command that you are using to run
 BuildStream using the <code class="docutils literal notranslate"><span class="pre">-c</span></code> option.  If you are using the
-<a class="reference external" href="https://gitlab.com/BuildStream/buildstream/blob/master/contrib/bst-here">bst-here wrapper script</a>,
+<a class="reference external" href="https://github.com/apache/buildstream/blob/master/contrib//bst-here">bst-here wrapper script</a>,
 you can achieve the same results as the above example like this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bst-docker-import -c bst-here -t bst-hello hello.bst
 </pre></div>
@@ -222,37 +226,29 @@ you can achieve the same results as the above example like this:</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="buildstream.html" class="btn btn-neutral float-right" title="buildstream package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="core_additional.html" class="btn btn-neutral float-left" title="Additional writings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="buildstream.html" class="btn btn-neutral float-right" title="buildstream package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="core_additional.html" class="btn btn-neutral float-left" title="Additional writings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2017-2020, The BuildStream Contributors
+        &#169; Copyright 2017-2020, The BuildStream Contributors.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
